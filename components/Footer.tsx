@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react'
+import FAQ from './FAQ'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
+    <>
+      <FAQ />
+      <footer className="bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -80,5 +83,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   )
 }
