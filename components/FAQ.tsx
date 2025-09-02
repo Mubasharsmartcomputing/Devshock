@@ -42,35 +42,35 @@ const accordionData: AccordionItem[] = [
 ]
 
 const FAQ: React.FC = () => (
-	<div className="container py-10 md:pb-20 mt-5 rounded-lg">
-		<h1 className="text-3xl font-bold text-start md:text-center mb-3">FAQ</h1>
-		<p className="text-base text-start md:text-center mb-5 md:mb-12 text-gray-600">
+	<div className="container mx-auto px-4 py-8 md:py-16">
+		<h1 className="text-2xl md:text-3xl font-bold text-center mb-3">FAQ</h1>
+		<p className="text-sm md:text-base text-center mb-8 md:mb-12 text-gray-100 max-w-2xl mx-auto">
 			Prime Marketing Experts solves your digital marketing and website bottlenecks.
 		</p>
 
-		<div className="flex flex-col lg:flex-row rounded-2xl h-full gap-8 md:border md:p-10">
-			<div className="lg:w-1/2 flex justify-center mt-10 items-center">
-				<Image
-					src="/images/faq.png"
-					alt="FAQ Illustration"
-					width={500}
-					height={800}
-					className="md:rounded-lg md:shadow-md w-full h-auto object-cover"
-				/>
-			</div>
-			<div className="lg:w-1/2 h-auto flex items-center">
-				<Accordion type="single" collapsible className="w-full space-y-4">
+		<div className="flex flex-col lg:flex-row rounded-2xl gap-6 md:gap-8 md:border md:p-6 lg:p-10">
+			<div className="w-full lg:w-1/2 order-2 lg:order-1">
+				<Accordion type="single" collapsible className="w-full space-y-3 md:space-y-4">
 					{accordionData.map((item, index) => (
 						<AccordionItem
 							value={`item-${index}`}
 							key={index}
-							className="md:border md:shadow-none border-gray-200 md:rounded-lg px-2 md:px-5 py-2"
+							className="border border-gray-200 rounded-lg px-3 md:px-5 py-2 shadow-sm"
 						>
-							<AccordionTrigger className="text-start">{item.question}</AccordionTrigger>
-							<AccordionContent>{item.answer}</AccordionContent>
+							<AccordionTrigger className="text-left text-sm md:text-base font-medium">{item.question}</AccordionTrigger>
+							<AccordionContent className="text-sm md:text-base text-gray-600">{item.answer}</AccordionContent>
 						</AccordionItem>
 					))}
 				</Accordion>
+			</div>
+			<div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center">
+				<Image
+					src="/images/faq.png"
+					alt="FAQ Illustration"
+					width={500}
+					height={400}
+					className="rounded-lg shadow-md w-full max-w-md lg:max-w-full h-auto object-cover"
+				/>
 			</div>
 		</div>
 	</div>

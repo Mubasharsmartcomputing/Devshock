@@ -40,10 +40,10 @@ export default function Header() {
             <Link href="/contact" className="text-gray-700 hover:text-red-500 transition-colors font-medium">
               Contact Us
             </Link>
-            <Link href="/consultation">
+            <Link href="/contact">
               <Button
                 variant="outline"
-                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white bg-white"
+                className="border-red-500 bg-gray-100 text-red-500 hover:bg-red-500 hover:text-white"
               >
                 Get Free Consultation
               </Button>
