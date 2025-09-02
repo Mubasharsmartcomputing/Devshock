@@ -44,7 +44,7 @@ const accordionData: AccordionItem[] = [
 const FAQ: React.FC = () => (
 	<div className="container mx-auto px-4 py-8 md:py-16">
 		<h1 className="text-2xl md:text-3xl font-bold text-center mb-3">FAQ</h1>
-		<p className="text-sm md:text-base text-center mb-8 md:mb-12 text-gray-100 max-w-2xl mx-auto">
+		<p className="text-sm md:text-base text-center mb-8 md:mb-12 text-white max-w-2xl mx-auto">
 			Prime Marketing Experts solves your digital marketing and website bottlenecks.
 		</p>
 
@@ -58,7 +58,7 @@ const FAQ: React.FC = () => (
 							className="border border-gray-200 rounded-lg px-3 md:px-5 py-2 shadow-sm"
 						>
 							<AccordionTrigger className="text-left text-sm md:text-base font-medium">{item.question}</AccordionTrigger>
-							<AccordionContent className="text-sm md:text-base text-gray-600">{item.answer}</AccordionContent>
+							<AccordionContent className="text-sm md:text-base text-white">{item.answer}</AccordionContent>
 						</AccordionItem>
 					))}
 				</Accordion>

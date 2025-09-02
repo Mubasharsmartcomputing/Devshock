@@ -12,17 +12,17 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-red-500">Devshock</h3>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-white leading-relaxed">
               Built by founders, powered by elite engineering. We deliver SaaS, MVPs, and AI-driven solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              <a href="#" className="text-white hover:text-red-500 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              <a href="#" className="text-white hover:text-red-500 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              <a href="#" className="text-white hover:text-red-500 transition-colors">
                 <Github size={20} />
               </a>
             </div>
@@ -32,16 +32,16 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <div className="space-y-2">
-              <Link href="/" className="block text-gray-400 hover:text-red-400 transition-colors">
+              <Link href="/" className="block text-white hover:text-red-400 transition-colors">
                 Home
               </Link>
-              <Link href="/about" className="block text-gray-400 hover:text-red-400 transition-colors">
+              <Link href="/about" className="block text-white hover:text-red-400 transition-colors">
                 About Us
               </Link>
-              <Link href="/case-studies" className="block text-gray-400 hover:text-red-400 transition-colors">
+              <Link href="/case-studies" className="block text-white hover:text-red-400 transition-colors">
                 Case Studies
               </Link>
-              <Link href="/contact" className="block text-gray-400 hover:text-red-400 transition-colors">
+              <Link href="/contact" className="block text-white hover:text-red-400 transition-colors">
                 Contact Us
               </Link>
             </div>
@@ -51,10 +51,10 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Services</h4>
             <div className="space-y-2">
-              <p className="text-gray-400">MVP Development</p>
-              <p className="text-gray-400">SaaS Scaling</p>
-              <p className="text-gray-400">AI Solutions</p>
-              <p className="text-gray-400">Dedicated Teams</p>
+              <p className="text-white">MVP Development</p>
+              <p className="text-white">SaaS Scaling</p>
+              <p className="text-white">AI Solutions</p>
+              <p className="text-white">Dedicated Teams</p>
             </div>
           </div>
 
@@ -62,15 +62,15 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Contact</h4>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-gray-400">
+              <div className="flex items-center space-x-3 text-white">
                 <Mail size={16} />
                 <span>hello@devshock.com</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-400">
+              <div className="flex items-center space-x-3 text-white">
                 <Phone size={16} />
                 <span>+1 (555) 123-4567</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-400">
+              <div className="flex items-center space-x-3 text-white">
                 <MapPin size={16} />
                 <span>Global Remote Team</span>
               </div>
@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-white">
           <p>&copy; 2024 Devshock. Built by founders, powered by elite engineering talent.</p>
         </div>
       </div>

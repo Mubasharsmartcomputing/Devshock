@@ -32,7 +32,7 @@ export default function Testimonials() {
                   <Star key={star} className="h-6 w-6 text-red-500 fill-current" />
                 ))}
               </div>
-              <blockquote className="text-xl md:text-2xl text-gray-300 mb-6 italic">
+              <blockquote className="text-xl md:text-2xl text-white mb-6 italic">
                 "With Devshock, we built a structure that felt like home—professional, timely, and aligned with our
                 vision."
               </blockquote>

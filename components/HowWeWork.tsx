@@ -49,7 +49,7 @@ export default function HowWeWork() {
         <h2 className="text-4xl font-bold text-red-500 mb-4">
           How We Work
         </h2>
-        <p className="text-gray-400 text-lg md:text-xl mb-16 max-w-3xl mx-auto">
+        <p className="text-white text-lg md:text-xl mb-16 max-w-3xl mx-auto">
           Our proven approach to delivering successful solutions that ensure quality,
           efficiency, and satisfaction
         </p>
@@ -65,14 +65,14 @@ export default function HowWeWork() {
                   {step.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-white">{step.title}</h3>
-                <p className="text-gray-400">{step.description}</p>
+                <p className="text-white">{step.description}</p>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   {step.items.map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <Check className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
-                      <span className="text-gray-300">{item}</span>
+                      <span className="text-white">{item}</span>
                     </li>
                   ))}
                 </ul>

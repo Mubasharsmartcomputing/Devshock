@@ -98,13 +98,13 @@ export default function CredibilityProof() {
           ].map((item, index) => (
             <motion.div key={index} variants={fadeInUp}>
               <div className="text-5xl font-bold text-red-500 mb-2">{item.stat}</div>
-              <div className="text-gray-400">{item.label}</div>
+              <div className="text-white">{item.label}</div>
             </motion.div>
           ))}
         </motion.div>
 
         <motion.p
-          className="text-gray-400 mb-8"
+          className="text-white mb-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}

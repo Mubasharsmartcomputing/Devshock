@@ -1,5 +1,6 @@
 import { Card, CardHeader } from "@/components/ui/card"
 import { UserCheck, Globe, Shield, Target } from "lucide-react"
+import Image from "next/image"
 
 export default function WhyDevshock() {
   return (
@@ -8,7 +9,7 @@ export default function WhyDevshock() {
         <h2 className="text-4xl font-bold text-red-500 mb-4">
           Why Devshock?
         </h2>
-        <p className="text-gray-400 text-lg md:text-xl mb-16 max-w-3xl mx-auto">
+        <p className="text-white text-lg md:text-xl mb-16 max-w-3xl mx-auto">
           What sets us apart in delivering exceptional development solutions
         </p>
 
@@ -28,12 +29,14 @@ export default function WhyDevshock() {
                   <item.icon className="w-8 h-8 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
-                <p className="text-gray-400">{item.desc}</p>
+                <p className="text-white">{item.desc}</p>
               </CardHeader>
               <div className="absolute left-0 bottom-[-10px] h-1 w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></div>
             </Card>
           ))}
         </div>
+
+        
       </div>
     </section>
   )

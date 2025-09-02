@@ -41,11 +41,8 @@ export default function Header() {
               Contact Us
             </Link>
             <Link href="/contact">
-              <Button
-                variant="outline"
-                className="border-red-500 bg-gray-100 text-red-500 hover:bg-red-500 hover:text-white"
-              >
-                Get Free Consultation
+              <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition-colors">
+                Get started
               </Button>
             </Link>
           </div>

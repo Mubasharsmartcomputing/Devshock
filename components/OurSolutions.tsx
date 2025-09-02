@@ -8,7 +8,7 @@ export default function OurSolutions() {
         <h2 className="text-4xl font-bold text-red-500 mb-4">
           Our Solutions
         </h2>
-        <p className="text-gray-400 text-lg md:text-xl mb-16 max-w-3xl mx-auto">
+        <p className="text-white text-lg md:text-xl mb-16 max-w-3xl mx-auto">
           Comprehensive development services tailored to your business needs
         </p>
 
@@ -28,7 +28,7 @@ export default function OurSolutions() {
                   <item.icon className="w-8 h-8 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
-                <p className="text-gray-400">{item.desc}</p>
+                <p className="text-white">{item.desc}</p>
               </CardHeader>
               <div className="absolute left-0 bottom-[-10px] h-1 w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></div>
             </Card>
