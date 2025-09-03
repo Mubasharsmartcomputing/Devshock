@@ -40,9 +40,9 @@ export default function Header() {
             <Link href="/contact" className="text-gray-700 hover:text-red-500 transition-colors font-medium">
               Contact Us
             </Link>
-            <Link href="/contact">
+            <Link href="/consultation">
               <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition-colors">
-                Get started
+               Get Free Consultation
               </Button>
             </Link>
           </div>
