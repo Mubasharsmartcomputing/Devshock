@@ -161,11 +161,11 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <Link href="/consultation">
-                <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition-colors">
-                  Get Free Consultation
-                </Button>
-              </Link>
+             <Link href="/contact">
+              <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition-colors">
+                Get started
+              </Button>
+            </Link>
             </motion.div>
           </div>
 
