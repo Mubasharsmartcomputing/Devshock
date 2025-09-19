@@ -50,7 +50,7 @@ export default function ContactPage() {
             {/* Header */}
             <motion.div className="text-center mb-16" {...fadeInUp}>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Let's <span className="text-red-500">Collaborate</span>. We're All Ears!
+                Let's <span style={{color: '#02B2E8'}}>Collaborate</span>. We're All Ears!
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                 Unlock the gateway to collaboration by sharing your personal details, project aspirations, and desired
@@ -76,7 +76,7 @@ export default function ContactPage() {
                     <div className="flex flex-col items-center">
                       <div
                         className={`w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold transition-all duration-300 ${
-                          currentStep >= item.step ? "bg-red-500 text-white" : "bg-gray-800 text-gray-400"
+                          currentStep >= item.step ? "bg-blue-500 text-white" : "bg-gray-800 text-gray-400"
                         }`}
                       >
                         {item.step.toString().padStart(2, "0")}
@@ -88,7 +88,7 @@ export default function ContactPage() {
                     {index < 2 && (
                       <div
                         className={`hidden md:block w-16 lg:w-24 h-0.5 mx-4 transition-all duration-300 ${
-                          currentStep > item.step ? "bg-red-500" : "bg-gray-700"
+                          currentStep > item.step ? "bg-blue-500" : "bg-gray-700"
                         }`}
                       />
                     )}
@@ -115,7 +115,7 @@ export default function ContactPage() {
                         id="fullName"
                         value={formData.fullName}
                         onChange={(e) => handleInputChange("fullName", e.target.value)}
-                        className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-red-500"
+                        className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-blue-500"
                         placeholder="Enter your full name"
                       />
                     </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                         id="company"
                         value={formData.company}
                         onChange={(e) => handleInputChange("company", e.target.value)}
-                        className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-red-500"
+                        className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-blue-500"
                         placeholder="Enter your company name"
                       />
                     </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                         type="email"
                         value={formData.email}
                         onChange={(e) => handleInputChange("email", e.target.value)}
-                        className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-red-500"
+                        className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-blue-500"
                         placeholder="Enter your email address"
                       />
                     </div>
@@ -155,7 +155,7 @@ export default function ContactPage() {
                           value={formData.countryCode}
                           onValueChange={(value) => handleInputChange("countryCode", value)}
                         >
-                          <SelectTrigger className="w-24 bg-gray-800 border-gray-700 text-white h-12 focus:border-red-500">
+                          <SelectTrigger className="w-24 bg-gray-800 border-gray-700 text-white h-12 focus:border-blue-500">
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent className="bg-gray-800 border-gray-700">
@@ -180,7 +180,7 @@ export default function ContactPage() {
                           id="phone"
                           value={formData.phone}
                           onChange={(e) => handleInputChange("phone", e.target.value)}
-                          className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-red-500 ml-2 flex-1"
+                          className="bg-gray-800 border-gray-700 text-white h-12 text-lg focus:border-blue-500 ml-2 flex-1"
                           placeholder="Enter your phone number"
                         />
                       </div>
@@ -228,7 +228,7 @@ export default function ContactPage() {
                 </Button>
                 <Button
                   onClick={nextStep}
-                  className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 text-lg font-semibold"
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-lg font-semibold"
                 >
                   {currentStep === 3 ? "Submit" : "Next"}
                   <ArrowRight className="ml-2 h-5 w-5" />

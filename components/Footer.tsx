@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react'
 import FAQ from './FAQ'
 
@@ -11,18 +12,26 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-red-500">Devshock</h3>
+            <div className="bg-[#02B2E8] p-2 rounded-lg w-fit">
+              <Image
+                src="/logo.png"
+                alt="Devshock Logo"
+                width={32}
+                height={32}
+                className="w-30 h-16"
+              />
+            </div>
             <p className="text-white leading-relaxed">
               Built by founders, powered by elite engineering. We deliver SaaS, MVPs, and AI-driven solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-red-500 transition-colors">
+              <a href="#" className="text-white hover:text-blue-500 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-white hover:text-red-500 transition-colors">
+              <a href="#" className="text-white hover:text-blue-500 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-white hover:text-red-500 transition-colors">
+              <a href="#" className="text-white hover:text-blue-500 transition-colors">
                 <Github size={20} />
               </a>
             </div>
@@ -32,16 +41,13 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <div className="space-y-2">
-              <Link href="/" className="block text-white hover:text-red-400 transition-colors">
+              <Link href="/" className="block text-white hover:text-blue-400 transition-colors">
                 Home
               </Link>
-              <Link href="/about" className="block text-white hover:text-red-400 transition-colors">
+              <Link href="/about" className="block text-white hover:text-blue-400 transition-colors">
                 About Us
               </Link>
-              <Link href="/case-studies" className="block text-white hover:text-red-400 transition-colors">
-                Case Studies
-              </Link>
-              <Link href="/contact" className="block text-white hover:text-red-400 transition-colors">
+              <Link href="/contact" className="block text-white hover:text-blue-400 transition-colors">
                 Contact Us
               </Link>
             </div>

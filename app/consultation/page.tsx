@@ -59,7 +59,7 @@ export default function ConsultationPage() {
               className="text-4xl md:text-6xl font-bold mb-6"
               {...fadeInUp}
             >
-              Get Your <span className="text-red-500">Free Consultation</span>
+              Get Your <span style={{color: '#02B2E8'}}>Free Consultation</span>
             </motion.h1>
             
             <motion.p 
@@ -101,8 +101,8 @@ export default function ConsultationPage() {
               }
             ].map((benefit, index) => (
               <div key={index} className="space-y-4">
-                <div className="mx-auto w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center">
-                  <benefit.icon className="h-8 w-8 text-red-500" />
+                <div className="mx-auto w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center">
+                  <benefit.icon className="h-8 w-8" style={{color: '#02B2E8'}} />
                 </div>
                 <h3 className="text-xl font-semibold">{benefit.title}</h3>
                 <p className="text-gray-400">{benefit.desc}</p>
@@ -137,7 +137,7 @@ export default function ConsultationPage() {
                           id="name"
                           value={formData.name}
                           onChange={(e) => handleInputChange('name', e.target.value)}
-                          className="bg-gray-800 border-gray-700 focus:border-red-500"
+                          className="bg-gray-800 border-gray-700 focus:border-blue-500"
                           placeholder="Your full name"
                           required
                         />
@@ -149,7 +149,7 @@ export default function ConsultationPage() {
                           type="email"
                           value={formData.email}
                           onChange={(e) => handleInputChange('email', e.target.value)}
-                          className="bg-gray-800 border-gray-700 focus:border-red-500"
+                          className="bg-gray-800 border-gray-700 focus:border-blue-500"
                           placeholder="your@email.com"
                           required
                         />
@@ -163,7 +163,7 @@ export default function ConsultationPage() {
                           id="company"
                           value={formData.company}
                           onChange={(e) => handleInputChange('company', e.target.value)}
-                          className="bg-gray-800 border-gray-700 focus:border-red-500"
+                          className="bg-gray-800 border-gray-700 focus:border-blue-500"
                           placeholder="Your company name"
                         />
                       </div>
@@ -173,7 +173,7 @@ export default function ConsultationPage() {
                           id="phone"
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
-                          className="bg-gray-800 border-gray-700 focus:border-red-500"
+                          className="bg-gray-800 border-gray-700 focus:border-blue-500"
                           placeholder="+1 (555) 123-4567"
                         />
                       </div>
@@ -184,7 +184,7 @@ export default function ConsultationPage() {
                       <div className="space-y-2">
                         <Label>Project Type *</Label>
                         <Select value={formData.projectType} onValueChange={(value) => handleInputChange('projectType', value)}>
-                          <SelectTrigger className="bg-gray-800 border-gray-700 focus:border-red-500">
+                          <SelectTrigger className="bg-gray-800 border-gray-700 focus:border-blue-500">
                             <SelectValue placeholder="Select project type" />
                           </SelectTrigger>
                           <SelectContent className="bg-gray-800 border-gray-700">
@@ -200,7 +200,7 @@ export default function ConsultationPage() {
                       <div className="space-y-2">
                         <Label>Budget Range</Label>
                         <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)}>
-                          <SelectTrigger className="bg-gray-800 border-gray-700 focus:border-red-500">
+                          <SelectTrigger className="bg-gray-800 border-gray-700 focus:border-blue-500">
                             <SelectValue placeholder="Select budget range" />
                           </SelectTrigger>
                           <SelectContent className="bg-gray-800 border-gray-700">
@@ -217,7 +217,7 @@ export default function ConsultationPage() {
                     <div className="space-y-2">
                       <Label>Timeline</Label>
                       <Select value={formData.timeline} onValueChange={(value) => handleInputChange('timeline', value)}>
-                        <SelectTrigger className="bg-gray-800 border-gray-700 focus:border-red-500">
+                        <SelectTrigger className="bg-gray-800 border-gray-700 focus:border-blue-500">
                           <SelectValue placeholder="Select timeline" />
                         </SelectTrigger>
                         <SelectContent className="bg-gray-800 border-gray-700">
@@ -249,7 +249,7 @@ export default function ConsultationPage() {
                               id={service}
                               checked={formData.services.includes(service)}
                               onCheckedChange={() => handleServiceToggle(service)}
-                              className="border-gray-600 data-[state=checked]:bg-red-500 data-[state=checked]:border-red-500"
+                              className="border-gray-600 data-[state=checked]:bg-blue-500 data-[state=checked]:border-blue-500"
                             />
                             <Label htmlFor={service} className="text-sm">{service}</Label>
                           </div>
@@ -264,7 +264,7 @@ export default function ConsultationPage() {
                         id="description"
                         value={formData.description}
                         onChange={(e) => handleInputChange('description', e.target.value)}
-                        className="bg-gray-800 border-gray-700 focus:border-red-500 min-h-[120px]"
+                        className="bg-gray-800 border-gray-700 focus:border-blue-500 min-h-[120px]"
                         placeholder="Tell us about your project, goals, and any specific requirements..."
                         required
                       />
@@ -273,7 +273,7 @@ export default function ConsultationPage() {
                     <Button 
                       type="submit" 
                       size="lg" 
-                      className="w-full bg-red-500 hover:bg-red-600 text-white py-4 text-lg font-semibold"
+                      className="w-full bg-blue-500 hover:bg-blue-600 text-white py-4 text-lg font-semibold"
                     >
                       Schedule Free Consultation
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -295,7 +295,7 @@ export default function ConsultationPage() {
               <Card className="bg-gray-900/50 border-gray-800">
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Calendar className="h-6 w-6 text-red-500 mr-2" />
+                    <Calendar className="h-6 w-6 mr-2" style={{color: '#02B2E8'}} />
                     What to Expect
                   </CardTitle>
                 </CardHeader>
@@ -308,7 +308,7 @@ export default function ConsultationPage() {
                     "Next steps and proposal outline"
                   ].map((item, index) => (
                     <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{color: '#02B2E8'}} />
                       <span className="text-gray-300">{item}</span>
                     </div>
                   ))}
@@ -319,7 +319,7 @@ export default function ConsultationPage() {
               <Card className="bg-gray-900/50 border-gray-800">
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Clock className="h-6 w-6 text-red-500 mr-2" />
+                    <Clock className="h-6 w-6 mr-2" style={{color: '#02B2E8'}} />
                     Our Process
                   </CardTitle>
                 </CardHeader>
@@ -347,7 +347,7 @@ export default function ConsultationPage() {
                     }
                   ].map((process, index) => (
                     <div key={index} className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                         {process.step}
                       </div>
                       <div>
@@ -360,7 +360,7 @@ export default function ConsultationPage() {
               </Card>
 
               {/* Contact Info */}
-              <Card className="bg-gradient-to-br from-red-500/10 to-transparent border-red-500/20">
+              <Card className="bg-gradient-to-br from-blue-500/10 to-transparent border-blue-500/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4">Prefer to Talk Directly?</h3>
                   <div className="space-y-3 text-gray-300">

@@ -4,19 +4,17 @@ import HeroSection from "@/components/HeroSection"
 import HowWeWork from "@/components/HowWeWork"
 import OurSolutions from "@/components/OurSolutions"
 import WhyDevshock from "@/components/WhyDevshock"
-import CredibilityProof from "@/components/CredibilityProof"
 import Testimonials from "@/components/Testimonials"
-import FAQ from "@/components/FAQ"
+import TechnologiesCarousel from "@/components/TechnologiesCarousel"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       <HeroSection />
       <OurSolutions />
+      <TechnologiesCarousel />
       <HowWeWork />
-      <WhyDevshock />
-      <CredibilityProof />
-      <Testimonials />
+      <WhyDevshock />     
       {/* <FAQ /> */}
     </div>
   )

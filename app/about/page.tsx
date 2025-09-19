@@ -30,7 +30,7 @@ export default function AboutPage() {
               className="text-4xl md:text-6xl font-bold mb-6"
               {...fadeInUp}
             >
-              About <span className="text-red-500">Devshock</span>
+              About <span style={{color: '#02B2E8'}}>Devshock</span>
             </motion.h1>
             
             <motion.p 
@@ -64,22 +64,22 @@ export default function AboutPage() {
                   Today, we've assembled a global team of elite engineers, designers, and product specialists who share our founder mindset and commitment to excellence.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-red-500/10 to-transparent rounded-2xl p-8 border border-red-500/20">
+              <div className="bg-gradient-to-br from-blue-500/10 to-transparent rounded-2xl p-8 border border-blue-500/20">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-red-500 mb-2">10+</div>
+                    <div className="text-3xl font-bold mb-2" style={{color: '#02B2E8'}}>3+</div>
                     <div className="text-gray-400">Years Experience</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-red-500 mb-2">100+</div>
+                    <div className="text-3xl font-bold mb-2" style={{color: '#02B2E8'}}>30+</div>
                     <div className="text-gray-400">Projects Delivered</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-red-500 mb-2">50+</div>
+                    <div className="text-3xl font-bold mb-2" style={{color: '#02B2E8'}}>20+</div>
                     <div className="text-gray-400">Happy Clients</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-red-500 mb-2">95%</div>
+                    <div className="text-3xl font-bold mb-2" style={{color: '#02B2E8'}}>95%</div>
                     <div className="text-gray-400">Success Rate</div>
                   </div>
                 </div>
@@ -129,10 +129,10 @@ export default function AboutPage() {
               }
             ].map((value, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300 h-full">
+                <Card className="bg-gray-900/50 border-gray-800 hover:border-blue-500/50 transition-all duration-300 h-full">
                   <CardContent className="p-6 text-center">
-                    <div className="mb-4 p-3 bg-red-500/10 rounded-lg w-fit mx-auto">
-                      <value.icon className="h-8 w-8 text-red-500" />
+                    <div className="mb-4 p-3 bg-blue-500/10 rounded-lg w-fit mx-auto">
+                      <value.icon className="h-8 w-8" style={{color: '#02B2E8'}} />
                     </div>
                     <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
                     <p className="text-gray-400 leading-relaxed">{value.desc}</p>
@@ -185,7 +185,7 @@ export default function AboutPage() {
                   className="flex items-start space-x-4"
                   variants={fadeInUp}
                 >
-                  <div className="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mt-1">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mt-1">
                     <CheckCircle className="h-5 w-5 text-white" />
                   </div>
                   <div>
@@ -223,7 +223,7 @@ export default function AboutPage() {
           >
             <Button 
               size="lg" 
-              className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105"
             >
               Start Your Project
               <ArrowRight className="ml-2 h-5 w-5" />

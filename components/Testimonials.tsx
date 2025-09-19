@@ -25,18 +25,18 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <Card className="bg-gradient-to-br from-black to-red-900/20 border-red-500/30">
+          <Card className="bg-gradient-to-br from-black to-blue-900/20 border-blue-500/30">
             <CardContent className="p-8 text-center">
               <div className="flex justify-center mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-6 w-6 text-red-500 fill-current" />
+                  <Star key={star} className="h-6 w-6 fill-current" style={{color: '#02B2E8'}} />
                 ))}
               </div>
               <blockquote className="text-xl md:text-2xl text-white mb-6 italic">
                 "With Devshock, we built a structure that felt like home—professional, timely, and aligned with our
                 vision."
               </blockquote>
-              <cite className="text-red-400 font-semibold">— SaaS Founder, Germany</cite>
+              <cite className="text-blue-400 font-semibold">— SaaS Founder, Germany</cite>
             </CardContent>
           </Card>
         </motion.div>

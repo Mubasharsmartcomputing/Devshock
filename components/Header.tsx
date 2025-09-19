@@ -28,20 +28,18 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-red-500 transition-colors font-medium">
+            <Link href="/" className="text-gray-700 transition-colors font-medium" style={{'--hover-color': '#02B2E8'}} onMouseEnter={(e) => e.currentTarget.style.color = '#02B2E8'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-red-500 transition-colors font-medium">
+            <Link href="/about" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#02B2E8'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               About Us
             </Link>
-            <Link href="/case-studies" className="text-gray-700 hover:text-red-500 transition-colors font-medium">
-              Case Studies
-            </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-red-500 transition-colors font-medium">
+
+            <Link href="/contact" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#02B2E8'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Contact Us
             </Link>
             <Link href="/consultation">
-              <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition-colors">
+              <Button className="text-white px-6 py-2 rounded-lg transition-colors" style={{backgroundColor: '#02B2E8'}} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0299D1'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#02B2E8'}>
                Get Free Consultation
               </Button>
             </Link>
@@ -60,22 +58,20 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4 pt-4">
-              <Link href="/" className="text-gray-700 hover:text-red-500 transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#02B2E8'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 Home
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-red-500 transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/about" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#02B2E8'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 About Us
               </Link>
-              <Link href="/case-studies" className="text-gray-700 hover:text-red-500 transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
-                Case Studies
-              </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-red-500 transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
+
+              <Link href="/contact" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#02B2E8'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 Contact Us
               </Link>
               <Link href="/consultation" onClick={() => setIsMenuOpen(false)}>
                 <Button
                   variant="outline"
-                  className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white bg-white w-full"
+                  className="bg-white w-full text-white" style={{borderColor: '#02B2E8', color: '#02B2E8', backgroundColor: 'white'}} onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#02B2E8'; e.currentTarget.style.color = 'white'}} onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = '#02B2E8'}}
                 >
                   Get Free Consultation
                 </Button>

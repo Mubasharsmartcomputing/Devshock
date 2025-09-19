@@ -97,7 +97,7 @@ export default function CredibilityProof() {
             { stat: "10+", label: "Years Experience" },
           ].map((item, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <div className="text-5xl font-bold text-red-500 mb-2">{item.stat}</div>
+              <div className="text-5xl font-bold mb-2" style={{color: '#02B2E8'}}>{item.stat}</div>
               <div className="text-white">{item.label}</div>
             </motion.div>
           ))}
