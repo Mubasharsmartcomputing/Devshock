@@ -47,19 +47,17 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <motion.h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" {...fadeInUp}>
-              Build Your <span style={{color: '#02B2E8'}}>Dream Team</span>
+            <motion.h1 className="text-4xl font-bold mb-6 leading-tight" {...fadeInUp}>
+              Transforming Your Business Vision Into <span style={{color: '#4169E1'}}>Digital Reality</span>
             </motion.h1>
 
             <motion.p
-              className="text-xl md:text-2xl text-white mb-8 leading-relaxed"
+              className="text-white text-lg md:text-xl mb-8 leading-relaxed"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              We've scouted and interviewed thousands of game changers in technology. We match you with our top
-              standouts – all while <span style={{color: '#02B2E8'}}>cutting costs by 43%</span> and{" "}
-              <span style={{color: '#02B2E8'}}>reducing staffing times by 5x</span>.
+              We deliver <span style={{color: '#4169E1'}}>transformative technology solutions</span> that drive efficiency, growth, and competitive advantage. Combining technical expertise with deep business understanding to deliver <span style={{color: '#4169E1'}}>exceptional value</span>.
             </motion.p>
 
             <motion.div
@@ -68,7 +66,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
              <Link href="/contact">
-              <Button className="text-white px-6 py-2 rounded-lg transition-colors" style={{backgroundColor: '#02B2E8'}} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0299D1'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#02B2E8'}>
+              <Button className="text-white px-6 py-2 rounded-lg transition-colors" style={{backgroundColor: '#4169E1'}} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3A5FCD'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#4169E1'}>
                 Get started
               </Button>
             </Link>

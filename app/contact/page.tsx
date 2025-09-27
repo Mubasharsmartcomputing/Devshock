@@ -50,7 +50,7 @@ export default function ContactPage() {
             {/* Header */}
             <motion.div className="text-center mb-16" {...fadeInUp}>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Let's <span style={{color: '#02B2E8'}}>Collaborate</span>. We're All Ears!
+                Let's <span style={{color: '#4169E1'}}>Collaborate</span>. We're All Ears!
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                 Unlock the gateway to collaboration by sharing your personal details, project aspirations, and desired

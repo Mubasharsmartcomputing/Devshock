@@ -5,7 +5,7 @@ export default function OurSolutions() {
   return (
     <section className="px-2 md:px-6 py-16 lg:px-12 container mx-auto">
       <div className="mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4" style={{color: '#02B2E8'}}>
+        <h2 className="text-4xl font-bold mb-4" style={{color: '#4169E1'}}>
           Our Solutions
         </h2>
         <p className="text-white text-lg md:text-xl mb-16 max-w-3xl mx-auto">
@@ -23,16 +23,16 @@ export default function OurSolutions() {
           ].map((item, index) => (
             <Card
               key={index}
-              className="text-left relative group transform transition-transform duration-300 hover:scale-105 bg-black border-gray-800" style={{'--hover-border': '#02B2E8'}} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#02B2E8'} onMouseLeave={(e) => e.currentTarget.style.borderColor = ''}
+              className="text-left relative group transform transition-transform duration-300 hover:scale-105 bg-black border-gray-800" style={{'--hover-border': '#4169E1'}} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.borderColor = ''}
             >
               <CardHeader>
-                <div className="mb-4 p-2 border w-16 h-16 items-center justify-center text-center relative rounded-[56%_44%_70%_30%/30%_54%_46%_70%] animate-pulse" style={{backgroundColor: '#02B2E8'}}>
+                <div className="mb-4 p-2 border w-16 h-16 items-center justify-center text-center relative rounded-[56%_44%_70%_30%/30%_54%_46%_70%] animate-pulse" style={{backgroundColor: '#4169E1'}}>
                   <item.icon className="w-8 h-8 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">{item.title}</h3>
                 <p className="text-white">{item.desc}</p>
               </CardHeader>
-              <div className="absolute left-0 bottom-[-10px] h-1 w-0 transition-all duration-300 group-hover:w-full" style={{backgroundColor: '#02B2E8'}}></div>
+              <div className="absolute left-0 bottom-[-10px] h-1 w-0 transition-all duration-300 group-hover:w-full" style={{backgroundColor: '#4169E1'}}></div>
             </Card>
           ))}
         </div>

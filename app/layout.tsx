@@ -31,7 +31,7 @@ html {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
       </head>
-      <body className="bg-black text-white">
+      <body className="bg-gradient-to-br from-black via-gray-900 to-blue-950 text-white">
         <Header />
         <main>{children}</main>
         <Footer />

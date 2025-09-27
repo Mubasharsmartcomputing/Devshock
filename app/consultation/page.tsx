@@ -59,7 +59,7 @@ export default function ConsultationPage() {
               className="text-4xl md:text-6xl font-bold mb-6"
               {...fadeInUp}
             >
-              Get Your <span style={{color: '#02B2E8'}}>Free Consultation</span>
+              Get Your <span style={{color: '#4169E1'}}>Free Consultation</span>
             </motion.h1>
             
             <motion.p 
@@ -102,7 +102,7 @@ export default function ConsultationPage() {
             ].map((benefit, index) => (
               <div key={index} className="space-y-4">
                 <div className="mx-auto w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center">
-                  <benefit.icon className="h-8 w-8" style={{color: '#02B2E8'}} />
+                  <benefit.icon className="h-8 w-8" style={{color: '#4169E1'}} />
                 </div>
                 <h3 className="text-xl font-semibold">{benefit.title}</h3>
                 <p className="text-gray-400">{benefit.desc}</p>
@@ -295,7 +295,7 @@ export default function ConsultationPage() {
               <Card className="bg-gray-900/50 border-gray-800">
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Calendar className="h-6 w-6 mr-2" style={{color: '#02B2E8'}} />
+                    <Calendar className="h-6 w-6 mr-2" style={{color: '#4169E1'}} />
                     What to Expect
                   </CardTitle>
                 </CardHeader>
@@ -308,7 +308,7 @@ export default function ConsultationPage() {
                     "Next steps and proposal outline"
                   ].map((item, index) => (
                     <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{color: '#02B2E8'}} />
+                      <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{color: '#4169E1'}} />
                       <span className="text-gray-300">{item}</span>
                     </div>
                   ))}
@@ -319,7 +319,7 @@ export default function ConsultationPage() {
               <Card className="bg-gray-900/50 border-gray-800">
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Clock className="h-6 w-6 mr-2" style={{color: '#02B2E8'}} />
+                    <Clock className="h-6 w-6 mr-2" style={{color: '#4169E1'}} />
                     Our Process
                   </CardTitle>
                 </CardHeader>
