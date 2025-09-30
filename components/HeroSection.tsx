@@ -84,7 +84,7 @@ export default function HeroSection() {
               src="/homeBaner.png"
               alt="Hero Banner"
               width={500}
-              height={300}
+              height={400}
               className="w-full h-auto max-w-sm mx-auto lg:max-w-md drop-shadow-lg"
               priority
             />
