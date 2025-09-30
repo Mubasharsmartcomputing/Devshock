@@ -65,11 +65,11 @@ const FAQ: React.FC = () => (
 			</div>
 			<div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center items-center">
 				<Image
-					src="/images/faq.png"
+					src="/faq.png"
 					alt="FAQ Illustration"
 					width={500}
-					height={400}
-					className="rounded-lg shadow-md w-full max-w-md lg:max-w-full h-auto object-cover"
+					height={200}
+					className="rounded-lg shadow-md w-full max-w-md lg:max-w-full h-[45vh] object-cover"
 				/>
 			</div>
 		</div>

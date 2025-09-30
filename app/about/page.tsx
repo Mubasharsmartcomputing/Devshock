@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Users, Target, Lightbulb, Rocket, ArrowRight, CheckCircle } from 'lucide-react'
+import AboutValues from '@/components/AboutValues'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -89,60 +90,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Values */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-center mb-16"
-            {...fadeInUp}
-          >
-            Our Core Values
-          </motion.h2>
-          
-          <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-          >
-            {[
-              {
-                icon: Target,
-                title: "Founder-First Mindset",
-                desc: "We think like founders because we are founders. Every decision is made with your business goals in mind."
-              },
-              {
-                icon: Users,
-                title: "Elite Talent Only",
-                desc: "We work with the top 1% of global talent. Our rigorous vetting process ensures exceptional quality."
-              },
-              {
-                icon: Lightbulb,
-                title: "Innovation Driven",
-                desc: "We stay ahead of technology trends and bring cutting-edge solutions to every project."
-              },
-              {
-                icon: Rocket,
-                title: "Delivery Excellence",
-                desc: "On-time, on-budget, and exceeding expectations. That's our commitment to every client."
-              }
-            ].map((value, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <Card className="bg-gray-900/50 border-gray-800 hover:border-blue-500/50 transition-all duration-300 h-full">
-                  <CardContent className="p-6 text-center">
-                    <div className="mb-4 p-3 bg-blue-500/10 rounded-lg w-fit mx-auto">
-                      <value.icon className="h-8 w-8" style={{color: '#4169E1'}} />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                    <p className="text-gray-400 leading-relaxed">{value.desc}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+      <AboutValues />
 
       {/* Our Approach */}
       <section className="py-20 bg-gray-900/30">

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,25 +31,9 @@ export default function Header() {
             <Link href="/" className="text-gray-700 transition-colors font-medium" style={{'--hover-color': '#4169E1'}} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Home
             </Link>
-            <div className="relative group">
-              <button className="text-gray-700 transition-colors font-medium flex items-center" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
-                Services <ChevronDown size={16} className="ml-1" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-1">Our Solutions</h3>
-                  <p className="text-sm text-gray-600 mb-3">Comprehensive development services tailored to your business needs</p>
-                  <div className="space-y-1">
-                    <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">MVP Development</a>
-                    <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">SaaS Scaling</a>
-                    <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">AI Solutions</a>
-                    <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">Mobile App Development</a>
-                    <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">DevOps</a>
-                    <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors">Dedicated Teams</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Link href="/services" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
+              Services
+            </Link>
             <Link href="/about" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               About Us
             </Link>
@@ -79,17 +63,9 @@ export default function Header() {
               <Link href="/" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 Home
               </Link>
-              <div className="text-gray-700 font-medium">
+              <Link href="/services" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 Services
-                <div className="ml-4 mt-2 space-y-2">
-                  <a href="#" className="block text-sm text-gray-600 hover:text-blue-600">MVP Development</a>
-                  <a href="#" className="block text-sm text-gray-600 hover:text-blue-600">SaaS Scaling</a>
-                  <a href="#" className="block text-sm text-gray-600 hover:text-blue-600">AI Solutions</a>
-                  <a href="#" className="block text-sm text-gray-600 hover:text-blue-600">Mobile App Development</a>
-                  <a href="#" className="block text-sm text-gray-600 hover:text-blue-600">DevOps</a>
-                  <a href="#" className="block text-sm text-gray-600 hover:text-blue-600">Dedicated Teams</a>
-                </div>
-              </div>
+              </Link>
               <Link href="/about" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 About Us
               </Link>

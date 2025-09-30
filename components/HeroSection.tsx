@@ -75,17 +75,17 @@ export default function HeroSection() {
 
           {/* Right Image */}
           <motion.div
-            className="relative"
-            initial={{ opacity: 0, x: 60 }}
+            className="relative z-60"
+            initial={{ opacity: 10, x: 80 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <Image
               src="/homeBaner.png"
               alt="Hero Banner"
-              width={400}
+              width={500}
               height={300}
-              className="w-full h-auto max-w-sm mx-auto lg:max-w-md"
+              className="w-full h-auto max-w-sm mx-auto lg:max-w-md drop-shadow-lg"
               priority
             />
           </motion.div>

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook, Twitter } from 'lucide-react'
 import FAQ from './FAQ'
 
 export default function Footer() {
@@ -12,15 +12,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="bg-[#4169E1] p-2 rounded-lg w-fit">
-              <Image
-                src="/logo.png"
-                alt="Devshock Logo"
-                width={32}
-                height={32}
-                className="w-30 h-16"
-              />
-            </div>
+            <Image
+              src="/footerLogo.svg"
+              alt="Devshock Logo"
+              width={150}
+              height={50}
+              className="w-auto h-12"
+            />
             <p className="text-white leading-relaxed">
               Built by founders, powered by elite engineering. We deliver SaaS, MVPs, and AI-driven solutions.
             </p>
@@ -33,6 +31,9 @@ export default function Footer() {
               </a>
               <a href="#" className="text-white hover:text-blue-500 transition-colors">
                 <Facebook size={20} />
+              </a>
+              <a href="#" className="text-white hover:text-blue-500 transition-colors">
+                <Twitter size={20} />
               </a>
             </div>
           </div>
