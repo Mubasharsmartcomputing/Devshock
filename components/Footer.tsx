@@ -23,16 +23,16 @@ export default function Footer() {
               Built by founders, powered by elite engineering. We deliver SaaS, MVPs, and AI-driven solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
+              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
+              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
+              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
+              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Twitter size={20} />
               </a>
             </div>
