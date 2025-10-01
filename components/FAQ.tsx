@@ -55,7 +55,7 @@ const FAQ: React.FC = () => (
 						<AccordionItem
 							value={`item-${index}`}
 							key={index}
-							className="border border-gray-200 rounded-lg px-3 md:px-5 py-2 shadow-sm"
+							className="!border !border-white rounded-lg px-3 md:px-5 py-2 shadow-sm"
 						>
 							<AccordionTrigger className="text-left text-sm md:text-base font-medium">{item.question}</AccordionTrigger>
 							<AccordionContent className="text-sm md:text-base text-white">{item.answer}</AccordionContent>

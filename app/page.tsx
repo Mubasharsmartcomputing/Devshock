@@ -6,6 +6,7 @@ import OurSolutions from "@/components/OurSolutions"
 import WhyDevshock from "@/components/WhyDevshock"
 import Testimonials from "@/components/Testimonials"
 import TechnologiesCarousel from "@/components/TechnologiesCarousel"
+import FAQ from "@/components/FAQ"
 
 export default function HomePage() {
   return (
@@ -14,8 +15,8 @@ export default function HomePage() {
       <OurSolutions />
       <TechnologiesCarousel />
       <HowWeWork />
-      <WhyDevshock />     
-      {/* <FAQ /> */}
+      <WhyDevshock />
+      <FAQ />
     </div>
   )
 }

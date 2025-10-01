@@ -1,13 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook, Twitter } from 'lucide-react'
-import FAQ from './FAQ'
 
 export default function Footer() {
   return (
-    <>
-      <FAQ />
-      <footer className="bg-gray-900 border-t border-gray-800">
+    <footer className="bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
@@ -23,16 +20,16 @@ export default function Footer() {
               Built by founders, powered by elite engineering. We deliver SaaS, MVPs, and AI-driven solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
+              <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-800 hover:bg-blue-500 hover:text-white transition-all duration-300">
                 <Twitter size={20} />
               </a>
             </div>
@@ -86,10 +83,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-white">
-          <p>&copy; 2025 Devshock. Built by founders, powered by elite engineering talent.</p>
+          <p>&copy; {new Date().getFullYear()} Devshock. Built by founders, powered by elite engineering talent.</p>
         </div>
       </div>
     </footer>
-    </>
   )
 }

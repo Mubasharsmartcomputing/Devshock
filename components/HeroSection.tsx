@@ -78,7 +78,7 @@ export default function HeroSection() {
             className="relative z-20"
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 2, delay: 0.9 }}
           >
             <Image
               src="/homeBaner.png"
@@ -91,9 +91,7 @@ export default function HeroSection() {
               unoptimized
             />
           </motion.div>
-        </div>
-
-        
+        </div>     
       </div>
     </section>
   )
