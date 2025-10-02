@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "A decade of SaaS, MVPs, and AI-driven product delivery—delivered through a founder-led team and executed by our global full-stack in-house team.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon-32x32.png",
+    icon: "/images/favicon-32x32.png",
   },
 }
 

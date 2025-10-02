@@ -18,9 +18,9 @@ export default function Header() {
               <Image
                 src="/logo.png"
                 alt="Devshock Logo"
-                width={32}
-                height={32}
-                className="w-30 h-16"
+                width={40}
+                height={40}
+                className="w-35 h-18"
               />
             </div>
             
