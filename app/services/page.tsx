@@ -2,6 +2,7 @@
 
 
 import OurSolutions from "@/components/OurSolutions"
+import TechnologiesCarousel from "@/components/TechnologiesCarousel"
 import WhyDevshock from "@/components/WhyDevshock"
 
 export default function ServicesPage() {
@@ -9,6 +10,7 @@ export default function ServicesPage() {
     <div className="min-h-screen">
       <OurSolutions />
       <WhyDevshock />
+      <TechnologiesCarousel/>
     </div>
   )
 }

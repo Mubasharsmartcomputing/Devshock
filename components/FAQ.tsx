@@ -15,29 +15,29 @@ interface AccordionItem {
 
 const accordionData: AccordionItem[] = [
 	{
-		question: 'How can we generate more sales-qualified leads and revenue?',
+		question: 'What is the application development timeline?',
 		answer:
-			'Are you looking to generate more leads and drive more revenue? We perform customized revenue marketing tactics to generate more high-quality sales opportunities.',
+			'The timeline depends on project complexity: Simple apps take 3-4 months, medium complexity projects require 4-6 months, and enterprise-level applications need 6-12 months. We provide detailed timelines during the planning phase after understanding your specific requirements.',
 	},
 	{
-		question: 'Why is my website not attracting enough potential customers?',
+		question: 'Do you do cross-platform development?',
 		answer:
-			'Does your business find getting qualified leads into your pipeline to be a challenge? Boost your lead generation potential with our tailored digital marketing strategies and website development services designed to meet your specific business requirements',
+			'Yes! We specialize in cross-platform development using Flutter and React Native frameworks. These technologies allow us to build applications that run seamlessly on both iOS and Android from a single codebase, reducing development time and costs.',
 	},
 	{
-		question: 'Why is our marketing and sales data not interconnected?',
+		question: 'Is it possible to add third-party tools inside my app?',
 		answer:
-			'We use marketing automation and CRM technology to align sales and marketing, maximizing ROI for each sales qualified lead (SQL). This will help you organize your data, so salespeople can analyze efforts for better results and reports.',
+			'Absolutely! We specialize in seamless integration of third-party tools and APIs, including payment gateways, CRM systems, analytics tools, authentication services, mapping APIs, and social media. Our development approach emphasizes creating applications with robust integration capabilities.',
 	},
 	{
-		question: 'Why does our website get very little traffic?',
+		question: 'What steps do you take to secure applications?',
 		answer:
-			"When your website has low traffic, you're missing out on potential business opportunities. offer customizable SEO services, social media management, and PPC advertising to improve your website's visibility and attract more visitors",
+			'Security is our top priority. Our comprehensive approach includes end-to-end data encryption, multi-factor authentication, regular penetration testing, and compliance with industry standards like GDPR and HIPAA. We also provide ongoing security updates and monitoring to protect against emerging threats.',
 	},
 	{
-		question: 'Why does managing digital campaigns take so much time?',
+		question: 'What types of applications do you build?',
 		answer:
-			'We help your company use the latest advertising strategies and technology to make the most of your advertising budget. Our experts will optimize your advertising budget by targeting ads, creating engaging graphics, and distributing your budget effectively across platforms.',
+			'We create business workflow-based custom web applications, Progressive Web Apps (PWAs) for app-like experiences, and scalable cloud-based solutions for high performance. Our applications are tailored to streamline your business operations and improve efficiency.',
 	},
 ]
 
@@ -45,7 +45,7 @@ const FAQ: React.FC = () => (
 	<div className="container mx-auto px-4 py-8 md:py-16">
 		<h1 className="text-2xl md:text-3xl font-bold text-center mb-3">FAQ</h1>
 		<p className="text-sm md:text-base text-center mb-8 md:mb-12 text-white max-w-2xl mx-auto">
-			Prime Marketing Experts solves your digital marketing and website bottlenecks.
+			Devshock creates custom web applications, PWAs, and scalable cloud solutions for your business.
 		</p>
 
 		<div className="flex flex-col lg:flex-row rounded-2xl gap-6 md:gap-8 md:border md:p-6 lg:p-10">
@@ -69,7 +69,7 @@ const FAQ: React.FC = () => (
 					alt="FAQ Illustration"
 					width={500}
 					height={200}
-					className="rounded-lg shadow-md w-full max-w-md lg:max-w-full h-[45vh] object-cover"
+					className="rounded-lg shadow-md w-full max-w-md lg:max-w-full h-[55vh] object-cover"
 				/>
 			</div>
 		</div>

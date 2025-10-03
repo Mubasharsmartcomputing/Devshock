@@ -31,12 +31,12 @@ export default function Header() {
             <Link href="/" className="text-gray-700 transition-colors font-medium" style={{'--hover-color': '#4169E1'}} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Home
             </Link>
-            <Link href="/services" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
-              Services
-            </Link>
-            <Link href="/about" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
+             <Link href="/about" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               About Us
             </Link>
+            <Link href="/services" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
+              Services
+            </Link>          
             <Link href="/contact" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Contact Us
             </Link>
