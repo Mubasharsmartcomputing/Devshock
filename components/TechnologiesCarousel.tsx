@@ -48,28 +48,7 @@ export default function TechnologiesCarousel() {
   const extendedLogosLeft = [...techLogosLeft, ...techLogosLeft]
   const extendedLogosRight = [...techLogosRight, ...techLogosRight]
 
-  useEffect(() => {
-    const initVanta = () => {
-      if (typeof window !== 'undefined' && (window as any).VANTA && (window as any).THREE) {
-        (window as any).VANTA.NET({
-          el: "#hero-bg",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0xf21863,
-          backgroundColor: 0x0f0c17
-        })
-      } else {
-        setTimeout(initVanta, 100)
-      }
-    }
-    
-    setTimeout(initVanta, 500)
-  }, [])
+
 
   useEffect(() => {
     const carouselLeft = carouselLeftRef.current
@@ -137,37 +116,22 @@ export default function TechnologiesCarousel() {
 
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-4 ">
+      <div className="container mx-auto px-4">
          <div className="text-center max-w-4xl mx-auto mb-16">
           {/* Main Headline */}
-          <h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance"
-            style={{
-              fontFamily: 'Inter',
-              fontWeight: 600,
-              fontSize: '36px',
-              lineHeight: '100%',
-              letterSpacing: '-1.16px'
-            }}
-          >
-            <div className="font-semibold font-inter leading-[120%] tracking-[-1.16px] text-transparent bg-clip-text bg-gradient-to-r from-[#4169E1] to-[#189EFF] pb-1">Technologies We Manage</div>
-
-          </h1>
+          <motion.h1 className="text-4xl font-bold mb-6 leading-tight" {...fadeInUp}>
+            Technologies We <span style={{color: '#4169E1'}}>Manage</span>
+          </motion.h1>
 
           {/* Subheading */}
-          <p 
-            className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto text-pretty"
-            style={{
-              fontFamily: 'Inter',
-              fontWeight: 400,
-              fontSize: '15.4px',
-              lineHeight: '24px',
-              letterSpacing: '0%'
-              
-            }}
+          <motion.p
+            className="text-white text-lg md:text-xl mb-8 leading-relaxed"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-           Our skilled developers are trained on multiple Tech-stacks to bring you the best product & services. 
-          </p>
+           Our skilled developers are trained on multiple <span style={{color: '#4169E1'}}>Tech-stacks</span> to bring you the best product & services.
+          </motion.p>
         </div>
  
     <motion.div
