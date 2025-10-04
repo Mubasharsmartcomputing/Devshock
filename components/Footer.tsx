@@ -55,6 +55,9 @@ export default function Footer() {
               <Link href="/services" className="block text-white hover:text-blue-400 transition-colors">
                 Services
               </Link>
+              <Link href="/case-studies" className="block text-white hover:text-blue-400 transition-colors">
+                Case Studies
+              </Link>
               <Link href="/contact" className="block text-white hover:text-blue-400 transition-colors">
                 Contact Us
               </Link>

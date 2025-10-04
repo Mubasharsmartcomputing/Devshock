@@ -36,6 +36,9 @@ export default function Header() {
             </Link>
             <Link href="/services" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Services
+            </Link>
+            <Link href="/case-studies" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
+              Case Studies
             </Link>          
             <Link href="/contact" className="text-gray-700 transition-colors font-medium" onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Contact Us
@@ -68,6 +71,9 @@ export default function Header() {
               </Link>
               <Link href="/about" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 About Us
+              </Link>
+              <Link href="/case-studies" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
+                Case Studies
               </Link>
               <Link href="/contact" className="text-gray-700 transition-colors font-medium" onClick={() => setIsMenuOpen(false)} onMouseEnter={(e) => e.currentTarget.style.color = '#4169E1'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
                 Contact Us
