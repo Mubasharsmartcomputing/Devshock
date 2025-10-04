@@ -15,10 +15,10 @@ export default function WhyDevshock() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: UserCheck, title: "Founders in Alignment", desc: "We understand your journey" },
-            { icon: Globe, title: "Known Global Execution", desc: "Proven worldwide delivery" },
-            { icon: Shield, title: "Transparent & Predictable", desc: "Clear communication always" },
-            { icon: Target, title: "Trusted in Key Markets", desc: "Established market presence" },
+            { icon: UserCheck, title: "Expert Team", desc: "Skilled professionals with deep technical expertise and industry experience delivering innovative solutions for your business success." },
+            { icon: Globe, title: "Global Execution", desc: "Proven worldwide delivery capabilities with successful projects across multiple industries and markets, ensuring reliable results." },
+            { icon: Shield, title: "Transparent & Predictable", desc: "Clear communication, regular updates, and predictable timelines with no hidden costs or surprises throughout the development process." },
+            { icon: Target, title: "Trusted in Key Markets", desc: "Established reputation and proven track record in critical business sectors with satisfied clients and successful long-term partnerships." },
           ].map((item, index) => (
             <Card
               key={index}

@@ -14,12 +14,12 @@ export default function OurSolutions() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { icon: Monitor, title: "SOFTWARES & MOBILE/ WEB APPLICATIONS", desc: "Custom Software and Mobile/Web Application Development." },
-            { icon: Brain, title: "Artificial Intelligence Solution & Industry 4.0", desc: "Solutions and Industry 4.0 for Smart Automation and Innovation." },
-            { icon: Cpu, title: "Embedded Systems", desc: "Embedded Systems for Advanced, Customised Technological Solutions." },
-            { icon: Users, title: "IT RESOURCE AUGMENTATION", desc: "Resource Augmentation for Scalable and Flexible Workforce Solutions." },
-            { icon: Building, title: "ENTERPRISE RESOURCE PLANNING SOLUTIONS", desc: "ERP Solutions for Streamlined Business Operations." },
-            { icon: GitBranch, title: "DEV OPS", desc: "Our DevOps services accelerate development and streamline operations." },
+            { icon: Monitor, title: "SOFTWARES & MOBILE/ WEB APPLICATIONS", desc: "Build custom websites and complex web applications with our experienced developers. We deliver scalable, secure solutions using modern technologies for optimal performance and user experience." },
+            { icon: Brain, title: "Artificial Intelligence", desc: "Leverage AI to automate processes and enhance decision-making with Devshock. Our services include NLP, chatbot development, intelligent automation, and predictive analytics for business growth." },
+            { icon: Cpu, title: "Embedded Systems", desc: "Design sophisticated embedded systems for IoT devices and industrial automation. We create custom firmware and hardware integration solutions for advanced technological applications and smart devices." },
+            { icon: Users, title: "IT RESOURCE AUGMENTATION", desc: "Scale your development team with our skilled professionals and flexible workforce solutions. We provide specialists and complete teams for seamless integration with your existing operations." },
+            { icon: Building, title: "ENTERPRISE RESOURCE PLANNING SOLUTIONS", desc: "Streamline business operations with comprehensive ERP solutions and enterprise systems. We implement customized platforms that integrate processes for improved efficiency and data-driven decisions." },
+            { icon: GitBranch, title: "DevOps", desc: "Optimize your software development and deployment processes with our DevOps services. We provide tailored tool and platform selection, streamlining operations for optimal productivity and faster time-to-market." },
           ].map((item, index) => (
             <Card
               key={index}
